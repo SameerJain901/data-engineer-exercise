@@ -10,3 +10,12 @@ sources:
         config:
           meta:
             external_location: "read_csv_auto('data/SalesOrders.csv', header=true)"
+
+models:
+  - name: int_order
+    columns:
+      - name: OrderId
+        description: Order Id for the each order
+        data_tests:
+          - unique
+      
